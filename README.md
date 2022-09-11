@@ -50,6 +50,16 @@ python manage.py createsuperuser
 python manage.py runserver 8000
 ```
 
+## Test the urls
+for test the urls:
+```
+python manage.py test digicala.tests.HomeTest.test_shampoo_url
+```
+<br>
+```
+python manage.py test digicala.tests.HomeTest.test_apple_url
+```
+
 ## Design
 1. At first, I wanted to use Scrappy, but since I had no experience working with it, I used Selenium.
 2. Digicala website is single page application(SPA). So i can't use 'requests' package
