@@ -54,9 +54,6 @@ python manage.py runserver 8000
 for test the urls:
 ```
 python manage.py test digicala.tests.HomeTest.test_shampoo_url
-```
-<br>
-```
 python manage.py test digicala.tests.HomeTest.test_apple_url
 ```
 
