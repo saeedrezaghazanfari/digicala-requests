@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digicala Requests</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body class="bg-dark text-white">
+
+    <div class="container" style="padding-top: 150px;">
+    
+        <form method="POST">
+            {% csrf_token %}
+            <div class="d-flex">
+                <input name="bound" type="number" class="form-control form-control-sm bg-dark text-white p-2 text-center" placeholder="How many requests should I make? (Default=1)">
+                <button type="submit" class="btn btn-sm btn-primary mx-1 px-5">Start Requests</button>
+            </div>
+        </form>
+
+        <a href="/list-data" class="btn btn-sm btn-primary my-4 px-3">Show Saved Data</a>
+    
+    </div>
+
+</body>
+</html>
